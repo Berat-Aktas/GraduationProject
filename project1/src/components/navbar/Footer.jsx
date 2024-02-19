@@ -7,9 +7,9 @@ function Footer() {
     const date = new Date();
     const year = date.getFullYear();
     return (
-        <>
-            <footer><p>Her hakkı BankWise aittir. ©{year}</p></footer>
-        </>
+        <footer className="footer">
+            <p>Her hakkı BankWise aittir. ©{year}</p>
+        </footer>
     );
 }
 
