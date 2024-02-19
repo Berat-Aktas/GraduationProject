@@ -18,6 +18,12 @@ import HouseIcon from '@mui/icons-material/House';
 
 function Sidebar({ state, setState, toggleDrawer }) {
 
+  console.log(state);
+
+  if(!state) {
+    console.error('State Sidebarda tanımsız.');
+    return null;
+  }
 
   const list = (anchor) => (
     <Box

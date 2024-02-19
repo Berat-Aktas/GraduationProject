@@ -1,6 +1,5 @@
 import './App.css';
 import * as React from 'react';
-import Navbar from './components/navbar/Navbar';
 import CheckBalance from './pages/CheckBalance';
 import DepositMoney from './pages/DepositMoney';
 import TransferMoney from './pages/TransferMoney';
@@ -15,7 +14,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-    <Navbar></Navbar>
+    <AppLayout></AppLayout>
     <Routes>
       <Route path='/check-balance' element={<CheckBalance />}></Route>
       <Route path='/deposit-money' element={<DepositMoney />}></Route>
