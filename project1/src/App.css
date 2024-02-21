@@ -39,8 +39,8 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  background-color: #282c34;
-  color: white;
+  /* background-color: #282c34;  */
+  color: green;
   padding: 10px 20px;
   width: 100%;
   box-sizing: border-box; /* Ekstra padding ve border genişliğinin toplam genişliği etkilememesini sağlar */

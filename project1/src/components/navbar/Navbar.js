@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Sidebar from './Sidebar';
+//import Sidebar from './Sidebar';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
@@ -17,10 +17,11 @@ function Navbar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
+  /* 
   const handleChange = (event) => {
     setAuth(event.target.checked);
   };
-
+*/
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -97,11 +98,6 @@ function Navbar() {
           )}
         </Toolbar>
       </AppBar>
-      <Sidebar
-        state={state}
-        setState={setState}
-        toggleDrawer={toggleDrawer}
-      ></Sidebar>
     </Box>
   );
 }

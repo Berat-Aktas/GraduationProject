@@ -5,7 +5,7 @@ import { Navigate, Route, useRoutes } from "react-router-dom";
 // Layoutları import edin
 //layouts
 import AppLayout from "../components/layout/AppLayout";
-import AuthLayout from "../components/layout/AuthLayout";
+//import AuthLayout from "../components/layout/AuthLayout";
 // Sayfaları import edin
 //pages
 import Login from "../pages/Auth/Login";
@@ -37,7 +37,7 @@ const SiteRoutes = () => {
               { path: "*", element: <NotFound /> }
             ]
         },
-        // Gerektiği kadar daha fazla rota ekleyin
+
     ]);
     return routes; // Bu, App.js'de kullanacağınız bileşen olacak
 };
