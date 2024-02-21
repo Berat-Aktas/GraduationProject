@@ -25,6 +25,7 @@ const SiteRoutes = () => {
         { path: "/", element: <Navigate to="/main-page" /> },
         { path: "/login", element: <Login /> },
         { path: "/register", element: <Register /> },
+       // { path: "/main-page", element: <BankWise /> },
         { 
             path: "/", 
             element: <AppLayout />, 
