@@ -5,7 +5,6 @@ import { Outlet } from 'react-router-dom';
 
 const AuthLayout = () => {
   return (
-    <>
       <Grid container component="main" sx={{ height: "100vh" }}>
         <Grid
           item
@@ -65,7 +64,6 @@ const AuthLayout = () => {
           }}
         />
       </Grid>
-    </>
   )
 }
 
