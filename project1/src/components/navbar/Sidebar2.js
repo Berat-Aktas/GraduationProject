@@ -14,13 +14,16 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import { Typography } from '@mui/material';
 
 function Sidebar2() {
     return (
         <>
             <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 <nav>
-                    <p>BankWise</p>
+                    <Typography alignItems="center">
+                        <p>BankWise</p>
+                    </Typography>
                 </nav>
                 <Divider />
                 <nav aria-label="Kullanıcı İşlemleri">

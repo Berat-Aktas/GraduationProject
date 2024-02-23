@@ -10,6 +10,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 function Navbar() {
@@ -91,8 +93,14 @@ function Navbar() {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Exit</MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <PersonIcon />
+                  Profile
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <ExitToAppIcon />
+                  Exit
+                </MenuItem>
               </Menu>
             </div>
           )}
