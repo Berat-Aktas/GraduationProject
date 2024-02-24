@@ -15,6 +15,7 @@ import TransferMoney from './../pages/TransferMoney';
 import WithdrawMoney from './../pages/WithdrawMoney';
 import BankWise from './../pages/BankWise';
 import NotFound from './../pages/NotFound';
+import Profile from "../pages/Profile";
 
 
 //Routes Tanımlama
@@ -23,17 +24,18 @@ const SiteRoutes = () => {
     let routes = useRoutes([
         { path: "/", element: <Navigate to="/main-page" /> },
         { path: "/login", element: <Login /> },
-       // { path: "/main-page", element: <BankWise /> },
-        { 
-            path: "/", 
-            element: <AppLayout />, 
+        // { path: "/main-page", element: <BankWise /> },
+        {
+            path: "/",
+            element: <AppLayout />,
             children: [
-              { path: "check-balance", element: <CheckBalance /> },
-              { path: "deposit-money", element: <DepositMoney />},
-              { path: "transfer-money", element: <TransferMoney /> },
-              { path: "withdraw-money", element: <WithdrawMoney /> },
-              { path: "main-page", element: <BankWise /> },
-              { path: "*", element: <NotFound /> }
+                { path: "check-balance", element: <CheckBalance /> },
+                { path: "deposit-money", element: <DepositMoney /> },
+                { path: "transfer-money", element: <TransferMoney /> },
+                { path: "withdraw-money", element: <WithdrawMoney /> },
+                { path: "profile", element: <Profile /> },
+                { path: "main-page", element: <BankWise /> },
+                { path: "*", element: <NotFound /> }
             ]
         },
 

@@ -6,6 +6,7 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import PersonIcon from '@mui/icons-material/Person';
 //import Sidebar from './Sidebar';
+import { useNavigate } from 'react-router-dom';
 import { Menu, MenuItem, Box, Toolbar, Typography, AppBar, Grid } from '@mui/material';
 
 
@@ -13,20 +14,15 @@ function Header({ toggleSidebar }) {
 
   const [auth] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
+  const navigate = useNavigate();
+ 
 
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
         <Grid item xs={12}>
-          <AppBar  position="static">
+          <AppBar position="static">
             <Toolbar>
               <IconButton
                 size="large"
@@ -34,7 +30,8 @@ function Header({ toggleSidebar }) {
                 color="inherit"
                 aria-label="menu"
                 sx={{ mr: 2 }}
-                onClick={toggleSidebar}           >
+                onClick={toggleSidebar}
+              >
                 <MenuIcon />
               </IconButton>
               <AccountBalanceIcon />
@@ -49,7 +46,7 @@ function Header({ toggleSidebar }) {
                     aria-label="account of current user"
                     aria-controls="menu-appbar"
                     aria-haspopup="true"
-                    onClick={handleMenu}
+                    onClick={(e) => { setAnchorEl(e.currentTarget) }}
                     color="inherit"
                   >
                     <AccountCircle />
@@ -67,13 +64,13 @@ function Header({ toggleSidebar }) {
                       horizontal: 'right',
                     }}
                     open={Boolean(anchorEl)}
-                    onClose={handleClose}
+                    onClose={() => { setAnchorEl(null) }}
                   >
-                    <MenuItem onClick={handleClose}>
+                    <MenuItem  onClick={() => {navigate('profile'); setAnchorEl(null); }}>
                       <PersonIcon />
                       Profile
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>
+                    <MenuItem onClick={() => { navigate('login');  setAnchorEl(null); }}>
                       <ExitToAppIcon />
                       Exit
                     </MenuItem>
