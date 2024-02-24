@@ -1,12 +1,22 @@
 import React from 'react';
-import { Grid, Avatar, TextField, Button, Typography, Link, Box } from '@mui/material';
+import {
+  Grid,
+  Avatar,
+  TextField,
+  Button,
+  Typography,
+  Link,
+  Box,
+  FormControlLabel,
+  Checkbox
+} from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import { useNavigate } from 'react-router-dom';
+
 
 function Login() {
 
-
+  const navigate = useNavigate();
 
   return (
     <Grid>
@@ -20,7 +30,7 @@ function Login() {
         }}
       >
         <Grid align='center'>
-          <Avatar sx={{ m: 1 , bgcolor: "success.main"}}  ><LockOutlinedIcon /></Avatar>
+          <Avatar sx={{ m: 1, bgcolor: "success.main" }}  ><LockOutlinedIcon /></Avatar>
           <h2>Sign In</h2>
         </Grid>
         <TextField label='Customer No' placeholder='Enter Customer No' required />
@@ -38,7 +48,7 @@ function Login() {
           label="Remember me"
         />
 
-        <Button type='submit' color='primary' variant='contained'  >Sign In</Button>
+        <Button type='submit' color='success' variant='contained'  >Sign In</Button>
 
         <Typography>
           <Link href='#' >

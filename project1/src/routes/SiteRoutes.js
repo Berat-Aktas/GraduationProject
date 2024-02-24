@@ -16,6 +16,8 @@ import WithdrawMoney from './../pages/WithdrawMoney';
 import BankWise from './../pages/BankWise';
 import NotFound from './../pages/NotFound';
 import Profile from "../pages/Profile";
+import ForgotPassword from "../pages/Auth/ForgotPassword";
+import ResetPassword from "../pages/Auth/ResetPassword";
 
 
 //Routes Tanımlama
@@ -24,7 +26,8 @@ const SiteRoutes = () => {
     let routes = useRoutes([
         { path: "/", element: <Navigate to="/main-page" /> },
         { path: "/login", element: <Login /> },
-        // { path: "/main-page", element: <BankWise /> },
+        { path: "/reset-password", element: <ResetPassword /> },
+        { path: "/forgot-password", element: <ForgotPassword /> },
         {
             path: "/",
             element: <AppLayout />,
