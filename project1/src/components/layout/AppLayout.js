@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../navbar/Header';
 import { Box, Grid } from '@mui/material';
 import Sidebar from '../navbar/Sidebar';
-// import Footer from '../navbar/Footer';
+import Footer from '../navbar/Footer';
 import { Outlet } from 'react-router-dom';
 
 
@@ -25,6 +25,7 @@ const AppLayout = () => {
                             <Outlet />
                         </Grid>
                     </Grid>
+                    <Footer />
                 </Box>
             </Box>
         </>

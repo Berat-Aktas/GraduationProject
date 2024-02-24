@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box, List, ListItem, Divider, ListItemButton,  ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, List, ListItem, Divider, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
 //Icons
 import HouseIcon from '@mui/icons-material/House';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
@@ -11,9 +11,11 @@ import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 function Sidebar({ isOpen }) {
     return (
         <>
-            <Box sx={{ width: '100%', maxWidth: 230,  bgcolor: 'background.paper' }}>
+            <Box sx={{ width: '100%', maxWidth: 230, bgcolor: 'background.paper' }}>
                 <nav>
-                    <Typography alignItems="center">
+                    <Typography
+                        textAlign="center"
+                    >
                         BankWise
                     </Typography>
                 </nav>

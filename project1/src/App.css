@@ -33,21 +33,3 @@
     transform: rotate(360deg);
   }
 }
-
-/*Footer*/
-/* .footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  /* background-color: #282c34;  
-  color: green;
-  padding: 10px 20px;
-  width: 100%;
-  box-sizing: border-box; 
-  text-align: center;
-  z-index: 1000;}
-
-.footer p {
-  margin: 0;
-  font-size: calc(10px + 1vmin);
-} */
