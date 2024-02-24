@@ -9,7 +9,6 @@ import AppLayout from "../components/layout/AppLayout";
 // Sayfaları import edin
 //pages
 import Login from "../pages/Auth/Login";
-import Register from "../pages/Auth/Register";
 import CheckBalance from './../pages/CheckBalance';
 import DepositMoney from './../pages/DepositMoney';
 import TransferMoney from './../pages/TransferMoney';
@@ -24,7 +23,6 @@ const SiteRoutes = () => {
     let routes = useRoutes([
         { path: "/", element: <Navigate to="/main-page" /> },
         { path: "/login", element: <Login /> },
-        { path: "/register", element: <Register /> },
        // { path: "/main-page", element: <BankWise /> },
         { 
             path: "/", 

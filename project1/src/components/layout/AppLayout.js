@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 //import Sidebar from '../navbar/Sidebar';
 import { Box } from '@mui/material';
-import Sidebar2 from '../navbar/Sidebar2';
+//import Sidebar2 from '../navbar/Sidebar2';
 import Footer from '../navbar/Footer';
 import { Outlet } from 'react-router-dom';
 
