@@ -20,7 +20,7 @@ function Footer() {
                 align="right"
             >
                 {"Copyright © "}
-                {new Date().getFullYear()}{"BankWise"}
+                {new Date().getFullYear()}{" BankWise"}
             </Typography>
         </Box>
     );

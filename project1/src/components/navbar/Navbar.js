@@ -5,7 +5,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import PersonIcon from '@mui/icons-material/Person';
-import Sidebar2 from './Sidebar2';
+import Sidebar from './Sidebar';
 import { Drawer, Menu, MenuItem, Box, Toolbar, Typography, AppBar, Grid } from '@mui/material';
 
 
@@ -13,6 +13,8 @@ function Navbar() {
 
   const [auth, setAuth] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
+
+
 
 
   const handleMenu = (event) => {
@@ -27,7 +29,7 @@ function Navbar() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container>
         <Grid item xs={12}>
-          <AppBar  position="static" style={{ zIndex: 1201 }}>
+          <AppBar  position="static">
             <Toolbar>
               <IconButton
                 size="large"

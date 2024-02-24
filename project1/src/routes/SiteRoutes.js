@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate, Route, useRoutes } from "react-router-dom";
+import { Navigate, useRoutes } from "react-router-dom";
 // ProtectedRoute bileşenini import edin
 //import { ProtectedRoute } from "./ProtectedRoute";
 // Layoutları import edin
@@ -28,11 +28,11 @@ const SiteRoutes = () => {
             path: "/", 
             element: <AppLayout />, 
             children: [
-              { path: "/check-balance", element: <Route><CheckBalance /></Route> },
-              { path: "/deposit-money", element: <Route><DepositMoney /></Route> },
-              { path: "/transfer-money", element: <Route><TransferMoney /></Route> },
-              { path: "/withdraw-money", element: <Route><WithdrawMoney /></Route> },
-              { path: "/main-page", element: <BankWise /> },
+              { path: "check-balance", element: <CheckBalance /> },
+              { path: "deposit-money", element: <DepositMoney />},
+              { path: "transfer-money", element: <TransferMoney /> },
+              { path: "withdraw-money", element: <WithdrawMoney /> },
+              { path: "main-page", element: <BankWise /> },
               { path: "*", element: <NotFound /> }
             ]
         },
