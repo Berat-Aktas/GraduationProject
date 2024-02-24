@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import { Box, Grid } from '@mui/material';
 import Sidebar from '../navbar/Sidebar';
-import Footer from '../navbar/Footer';
+// import Footer from '../navbar/Footer';
 import { Outlet } from 'react-router-dom';
 
 
@@ -20,14 +20,13 @@ const AppLayout = ({ children }) => {
                 <Sidebar />
                 <Box flexGrow={1}>
                     <Navbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-                    <Grid container spacing={2}>
+                    <Grid container spacing={2} >
                         <Grid item xs={12}>
                             <Outlet />
                         </Grid>
                     </Grid>
                 </Box>
             </Box>
-            <Footer />
         </>
     )
 }
