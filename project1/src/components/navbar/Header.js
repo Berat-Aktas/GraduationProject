@@ -5,17 +5,14 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import PersonIcon from '@mui/icons-material/Person';
-import Sidebar from './Sidebar';
-import { Drawer, Menu, MenuItem, Box, Toolbar, Typography, AppBar, Grid } from '@mui/material';
+//import Sidebar from './Sidebar';
+import { Menu, MenuItem, Box, Toolbar, Typography, AppBar, Grid } from '@mui/material';
 
 
-function Navbar() {
+function Header({ toggleSidebar }) {
 
-  const [auth, setAuth] = useState(true);
+  const [auth] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
-
-
-
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -37,14 +34,13 @@ function Navbar() {
                 color="inherit"
                 aria-label="menu"
                 sx={{ mr: 2 }}
-                onClick={null}           >
+                onClick={toggleSidebar}           >
                 <MenuIcon />
               </IconButton>
               <AccountBalanceIcon />
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 BankWise
               </Typography>
-
 
               {auth && (
                 <div>
@@ -93,4 +89,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
