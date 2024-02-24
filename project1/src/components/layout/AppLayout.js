@@ -17,7 +17,7 @@ const AppLayout = () => {
     return (
         <>
             <Box display="flex">
-                <Sidebar />
+                <Sidebar isOpen={isSidebarOpen}  />
                 <Box flexGrow={1}>
                     <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
                     <Grid container spacing={2} >

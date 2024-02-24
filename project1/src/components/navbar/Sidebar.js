@@ -8,10 +8,10 @@ import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
 
-function Sidebar() {
+function Sidebar({ isOpen }) {
     return (
         <>
-            <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+            <Box sx={{ width: '100%', maxWidth: 230,  bgcolor: 'background.paper' }}>
                 <nav>
                     <Typography alignItems="center">
                         BankWise
