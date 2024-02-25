@@ -18,6 +18,7 @@ import NotFound from './../pages/NotFound';
 import Profile from "../pages/Profile";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import ResetPassword from "../pages/Auth/ResetPassword";
+import ChangePassword from "../pages/Auth/ChangePassword";
 
 
 //Routes Tanımlama
@@ -28,6 +29,7 @@ const SiteRoutes = () => {
         { path: "/login", element: <Login /> },
         { path: "/reset-password", element: <ResetPassword /> },
         { path: "/forgot-password", element: <ForgotPassword /> },
+        { path: "/change-password", element: <ChangePassword /> },
         {
             path: "/",
             element: <AppLayout />,
