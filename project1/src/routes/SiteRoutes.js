@@ -1,11 +1,13 @@
 import React from "react";
 import { Navigate, useRoutes } from "react-router-dom";
 // ProtectedRoute bileşenini import edin
-//import { ProtectedRoute } from "./ProtectedRoute";
+// import { ProtectedRoute } from "./ProtectedRoute";
+
 // Layoutları import edin
 //layouts
 import AppLayout from "../components/layout/AppLayout";
-//import AuthLayout from "../components/layout/AuthLayout";
+import AuthLayout from "../components/layout/AuthLayout";
+
 // Sayfaları import edin
 //pages
 import Login from "../pages/Auth/Login";
