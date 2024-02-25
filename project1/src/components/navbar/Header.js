@@ -7,7 +7,14 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import PersonIcon from '@mui/icons-material/Person';
 //import Sidebar from './Sidebar';
 import { useNavigate } from 'react-router-dom';
-import { Menu, MenuItem, Box, Toolbar, Typography, AppBar, Grid } from '@mui/material';
+import {
+  Menu,
+  MenuItem,
+  Box, Toolbar,
+  Typography,
+  AppBar,
+  Grid
+} from '@mui/material';
 
 
 function Header({ toggleSidebar }) {
@@ -15,7 +22,7 @@ function Header({ toggleSidebar }) {
   const [auth] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
   const navigate = useNavigate();
- 
+
 
 
   return (
@@ -66,11 +73,11 @@ function Header({ toggleSidebar }) {
                     open={Boolean(anchorEl)}
                     onClose={() => { setAnchorEl(null) }}
                   >
-                    <MenuItem  onClick={() => {navigate('profile'); setAnchorEl(null); }}>
+                    <MenuItem onClick={() => { navigate('profile'); setAnchorEl(null); }}>
                       <PersonIcon />
                       Profile
                     </MenuItem>
-                    <MenuItem onClick={() => { navigate('login');  setAnchorEl(null); }}>
+                    <MenuItem onClick={() => { navigate('login'); setAnchorEl(null); }}>
                       <ExitToAppIcon />
                       Exit
                     </MenuItem>
