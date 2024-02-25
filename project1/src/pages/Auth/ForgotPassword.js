@@ -1,11 +1,9 @@
 import React from 'react';
 import { Avatar, Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 
 
 const ForgotPassword = () => {
 
-    const navigate = useNavigate();
 
     return (
         <>
