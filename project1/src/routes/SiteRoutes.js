@@ -16,7 +16,7 @@ import DepositMoney from './../pages/DepositMoney';
 import TransferMoney from './../pages/TransferMoney';
 import WithdrawMoney from './../pages/WithdrawMoney';
 import BankWise from './../pages/BankWise';
-import NotFound from './../pages/NotFound';
+import NotFound from '../pages/Helpers Pages/NotFound';
 import Profile from "../pages/Profile";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import ResetPassword from "../pages/Auth/ResetPassword";
