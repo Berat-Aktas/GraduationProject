@@ -17,7 +17,7 @@ swaggerDocument = require("./swagger.json");
 
 
 const app = express();
-app.use("api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 //START swagger-ui
 app.use(cors());
@@ -26,9 +26,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(helmet());
 app.use(limiter);
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
+app.get("/hello", (req, res) => {
+    res.json({ message: "Hello, World!" });
 });
-
 
 app.listen(8000);
