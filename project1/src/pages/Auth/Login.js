@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   Avatar,
   TextField,
-  Button,
   Typography,
   Link,
   Box,
@@ -105,7 +104,7 @@ function Login() {
           loading={loading}
           startIcon={<SaveIcon />}
         >
-          Kaydet
+          SAVE
         </LoadingButton>
         <Grid alignItems="center">
           <Grid item xs>

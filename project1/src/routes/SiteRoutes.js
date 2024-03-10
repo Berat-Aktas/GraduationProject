@@ -10,18 +10,19 @@ import AuthLayout from "../components/layout/AuthLayout";
 
 // Sayfaları import edin
 //pages
-import Login from "../pages/Auth/Login";
-import CheckBalance from './../pages/CheckBalance';
-import DepositMoney from './../pages/DepositMoney';
-import TransferMoney from './../pages/TransferMoney';
-import WithdrawMoney from './../pages/WithdrawMoney';
+import TransferMoney from "../pages/Bank Transactions/TransferMoney";
+import WithdrawMoney from './../pages/Bank Transactions/WithdrawMoney';
+import CheckBalance from "../pages/Bank Transactions/CheckBalance";
+import DepositMoney from "../pages/Bank Transactions/DepositMoney";
+
 import BankWise from './../pages/BankWise';
 import NotFound from '../pages/Helpers Pages/NotFound';
-import Profile from "../pages/Profile";
+
+import Login from "../pages/Auth/Login";
+import Profile from "../pages/Auth/Profile";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import ResetPassword from "../pages/Auth/ResetPassword";
 import ChangePassword from "../pages/Auth/ChangePassword";
-
 
 //Routes Tanımlama
 
