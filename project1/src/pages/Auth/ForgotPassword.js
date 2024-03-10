@@ -65,7 +65,7 @@ const ForgotPassword = () => {
                             or {' '}
                             <Link
                                 variant='body2'
-                                color="secondary"
+                                color="main"
                                 onClick={() => { navigate('/login') }}
                                 style={{ cursor: "pointer" }}
                             >
