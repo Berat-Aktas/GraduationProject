@@ -4,6 +4,7 @@ const BankWise = () => {
     return (
         <>
         <h1>The BankWise</h1>
+        <p>Welcome</p>
         </>
     )
 }
