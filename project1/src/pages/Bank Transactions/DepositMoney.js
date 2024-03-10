@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {
   Box,
-  MenuItem,
   TextField,
   Typography,
 } from '@mui/material';
