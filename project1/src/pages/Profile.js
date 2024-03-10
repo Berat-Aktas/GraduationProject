@@ -4,62 +4,92 @@ import {
   TableBody,
   TableCell,
   TableContainer,
-  TableHead,
   TableRow,
   Paper,
 } from '@mui/material';
 
 
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
-
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-
 const Profile = () => {
-
-
-  
-
   return (
     <>
- <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }} size="small" aria-label="profile-table">
+          <TableBody>
+            <TableRow>
+              <TableCell>Kullanıcı ID</TableCell>
+              <TableCell>200201801</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>    </>
+            <TableRow>
+              <TableCell>Ad</TableCell>
+              <TableCell>Berat</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Soyad</TableCell>
+              <TableCell>Aktaş</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Kullanıcı Adı</TableCell>
+              <TableCell>berat.aktas</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>E-Posta</TableCell>
+              <TableCell>berataktas2020@gmail.com</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Telefon</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Kullanıcı Tipi</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+
+            <TableRow>
+              <TableCell>Oluşturma Tarihi</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Oluşturan Kullanıcı</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Oluşturan Kullanıcı</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Düzenleme Tarihi</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Düzenleyen Kullanıcı</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Salt Okunur Kullanıcı</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Şifre Son Kullanma Tarihi</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Kullanıcı Durumu</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Rol Yetkisi</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Rol Adı</TableCell>
+              <TableCell>-</TableCell>
+            </TableRow>
+
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </>
   )
 };
 
