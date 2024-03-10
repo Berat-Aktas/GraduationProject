@@ -10,10 +10,10 @@ import { BrowserRouter } from 'react-router-dom';
 let theme = createTheme({
   palette: {
     primary: {
-      main: '#4682B4',
+      main: '#1E90FF',
     },
     secondary: {
-      main: '#87CEEB',
+      main: '#4682B4',
     },
   },
 });
