@@ -29,10 +29,17 @@ import ChangePassword from "../pages/Auth/ChangePassword";
 const SiteRoutes = () => {
     let routes = useRoutes([
         { path: "/", element: <Navigate to="/main-page" /> },
-        { path: "/login", element: <Login /> },
-        { path: "/reset-password", element: <ResetPassword /> },
-        { path: "/forgot-password", element: <ForgotPassword /> },
-        { path: "/change-password", element: <ChangePassword /> },
+
+        {
+            path: "/",
+            element: <AuthLayout />,
+            children: [
+                { path: "login", element: <Login /> },
+                { path: "reset-password", element: <ResetPassword /> },
+                { path: "forgot-password", element: <ForgotPassword /> },
+                { path: "change-password", element: <ChangePassword /> },
+            ],
+        },
         {
             path: "/",
             element: <AppLayout />,
