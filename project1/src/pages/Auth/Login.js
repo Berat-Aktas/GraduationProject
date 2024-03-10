@@ -28,7 +28,7 @@ function Login() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-
+  
   const [showPasswords, setShowPasswords] = useState({
     PASSWORD: false,
   });
@@ -111,7 +111,7 @@ function Login() {
           <Grid item xs>
             <Link
               variant='body2'
-              color="main"
+              color="secondary"
               onClick={() => { navigate('/forgot-password') }}
               style={{ cursor: "pointer" }}
             >
