@@ -9,7 +9,8 @@ import {
   FormControlLabel,
   Checkbox,
   IconButton,
-  InputAdornment
+  InputAdornment,
+  Grid
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { useNavigate } from 'react-router-dom';
@@ -27,8 +28,7 @@ function Login() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
-
-
+  
   const [showPasswords, setShowPasswords] = useState({
     PASSWORD: false,
   });
@@ -87,8 +87,15 @@ function Login() {
             ),
           }}
         />
-
-        
+        <FormControlLabel
+          control={
+            <Checkbox
+              name='checkedB'
+              color='primary'
+            />
+          }
+          label="Remember me"
+        />
         <LoadingButton
           type="submit"
           fullWidth
@@ -100,27 +107,20 @@ function Login() {
         >
           Kaydet
         </LoadingButton>
-
+        <Grid alignItems="center">
+          <Grid item xs>
+            <Link
+              variant='body2'
+              color="secondary"
+              onClick={() => { navigate('/forgot-password') }}
+              style={{ cursor: "pointer" }}
+            >
+              Forgot password?
+            </Link>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
-
-
-    //   <FormControlLabel
-    //     control={
-    //       <Checkbox
-    //         name='checkedB'
-    //         color='primary'
-    //       />
-    //     }
-    //     label="Remember me"
-    //   />
-
-    //   <Typography>
-    //     <Link href='#' >
-    //       Forgot password?
-    //     </Link>
-    //   </Typography>
-
   )
 }
 
