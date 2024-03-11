@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid, Paper, Stack, Typography } from '@mui/material';
 import { Outlet } from 'react-router-dom';
-
+import bankWiseLogo from '../../assets/2..png';
 
 
 const AuthLayout = () => {
@@ -33,7 +33,7 @@ const AuthLayout = () => {
               height={{ xs: 35, sm: 40 }}
             >
               <img
-                src={null}
+                src={bankWiseLogo}
                 alt="BankWise LOGO"
                 style={{ height: "inherit" }}
               />
