@@ -3,6 +3,7 @@ import { Box, Grid, Paper, Stack, Typography } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
 
+
 const AuthLayout = () => {
   return (
       <Grid container component="main" sx={{ height: "100vh" }}>
