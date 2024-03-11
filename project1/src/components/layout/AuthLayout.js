@@ -30,16 +30,6 @@ const AuthLayout = () => {
             justifyContent: "center"
           }}
         >
-          {/* LOGO */}
-          {/* <Typography
-            height={{ xs: 35, sm: 40 }}
-          >
-            <img
-                src={bankWiseLogo}
-                alt="BankWise LOGO"
-                style={{ height: "inherit" }}
-              />
-          </Typography> */}
           <Typography
             sx={{
               display: 'flex', // Flex kutu yapısını etkinleştir
@@ -68,7 +58,7 @@ const AuthLayout = () => {
         item
         sm={false}
         sx={{
-          backgroundImage: ``,
+          // backgroundImage: `url(${bankWiseLogo})`,
           backgroundRepeat: "no-repeat",
           backgroundColor: (t) =>
             t.palette.mode === "light"
