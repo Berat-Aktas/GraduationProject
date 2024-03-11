@@ -47,7 +47,7 @@ const ForgotPassword = () => {
                         required
                         fullWidth
                         autoComplete="mail-addres"
-                        label="Mail Adresiniz"
+                        label="Mail Address"
                     />
                     <LoadingButton
                         type="submit"
@@ -69,7 +69,7 @@ const ForgotPassword = () => {
                                 onClick={() => { navigate('/login') }}
                                 style={{ cursor: "pointer" }}
                             >
-                                Forgot password?
+                                Login
                             </Link>
                         </Grid>
                     </Grid>

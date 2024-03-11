@@ -45,7 +45,8 @@ const AuthLayout = () => {
               display: 'flex', // Flex kutu yapısını etkinleştir
               alignItems: 'center', // İçerikleri dikey eksen boyunca merkezle
               justifyContent: 'center', // İçerikleri yatay eksen boyunca merkezle
-              height: { xs: 35, sm: 40 }
+              height: { xs: 35, sm: 40 },
+              fontSize: '1.25rem', 
             }}
           >
             <AccountBalanceIcon sx={{ mr: 1 }} /> {/* Sağ tarafına margin ekle */}
