@@ -82,7 +82,7 @@ function Copyright(props) {
       variant='body2' align='center' {...props}
       >
       {"Copyright © "}
-      {new Date().getFullYear()}{"BankWise"}
+      {new Date().getFullYear()}{" "}{"BankWise"}
       </Typography>
     </Stack>
   );
