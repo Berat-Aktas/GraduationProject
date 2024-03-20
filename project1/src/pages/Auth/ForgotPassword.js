@@ -67,31 +67,31 @@ const ForgotPassword = () => {
                     Forgot Password
                 </Typography>
                 <Box sx={{ alignSelf: "stretch", mt: 1 }}>
-                <FormikProvider value={formik}>
-                        <Form onSubmit={handleSubmit}> 
-                    <TextField
-                        margin="normal"
-                        required
-                        fullWidth
-                        autoComplete="mail-addres"
-                        label="Mail Address"
-                        {...getFieldProps("MAIL_ADDRESS")}
-                        error={Boolean(touched.MAIL_ADDRESS && errors.MAIL_ADDRESS)}
-                        helperText={touched.MAIL_ADDRESS && errors.MAIL_ADDRESS}
-                    />
+                    <FormikProvider value={formik}>
+                        <Form onSubmit={handleSubmit}>
+                            <TextField
+                                margin="normal"
+                                required
+                                fullWidth
+                                autoComplete="mail-addres"
+                                label="Mail Address"
+                                {...getFieldProps("MAIL_ADDRESS")}
+                                error={Boolean(touched.MAIL_ADDRESS && errors.MAIL_ADDRESS)}
+                                helperText={touched.MAIL_ADDRESS && errors.MAIL_ADDRESS}
+                            />
 
-                    <LoadingButton
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        sx={{ mt: 3, mb: 2 }}
-                        color="success"
-                        loading={loading}
-                        startIcon={<SaveIcon />}
-                    >
-                        Kaydet
-                    </LoadingButton>
-                    </Form>
+                            <LoadingButton
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2 }}
+                                color="success"
+                                loading={loading}
+                                startIcon={<SaveIcon />}
+                            >
+                                Kaydet
+                            </LoadingButton>
+                        </Form>
                     </FormikProvider>
                     <Grid alignItems="center">
                         <Grid item xs>
