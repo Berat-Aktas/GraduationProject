@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../navbar/Header';
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, Container } from '@mui/material';
 import Sidebar from '../navbar/Sidebar';
 import Footer from '../navbar/Footer';
 import { Outlet } from 'react-router-dom';
@@ -16,8 +16,10 @@ const AppLayout = () => {
 
     return (
         <>
-            <Box display="flex">
-                <Sidebar isOpen={isSidebarOpen}  />
+            {/* <Box display="flex"> */}
+            <Container disableGutters maxWidth={false} sx={{ display: 'flex', height: '100vh' }}>
+
+                <Sidebar isOpen={isSidebarOpen} />
                 <Box flexGrow={1}>
                     <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
                     <Grid container spacing={2} >
@@ -27,7 +29,9 @@ const AppLayout = () => {
                     </Grid>
                     <Footer />
                 </Box>
-            </Box>
+            </Container>
+
+            {/* </Box> */}
         </>
     )
 }

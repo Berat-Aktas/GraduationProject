@@ -41,7 +41,7 @@ const validationSchema = yup.object({
         .required("Yeni şifrenin tekrar girilmesi zorunludur.")
 });
 
-
+//Şifreyi sıfırlama
 const ChangePassword = () => {
 
     const [loading, setLoading] = useState(false);

@@ -18,11 +18,37 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import PasswordIcon from '@mui/icons-material/Password';
 
 
+
+const validationSchema = yup.object({
+    MAIL_ADDRESS: yup
+        .string()
+        .required("Please enter mail address."),
+});
+
+
+
+//Mail gönderen
 const ForgotPassword = () => {
 
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
     // const {user} = useAuth();
+
+    const formik = useFormik({
+        initialValues: {
+            MAIL_ADDRESS: "",
+        },
+        validationSchema,
+        onSubmit: () => {
+            setLoading(true);
+            setLoading(false);
+        }
+    });
+
+    console.log(formik);
+
+    const { errors, touched, handleSubmit, getFieldProps } = formik;
+
     return (
         <>
             <Box
@@ -41,14 +67,19 @@ const ForgotPassword = () => {
                     Forgot Password
                 </Typography>
                 <Box sx={{ alignSelf: "stretch", mt: 1 }}>
-
+                <FormikProvider value={formik}>
+                        <Form onSubmit={handleSubmit}> 
                     <TextField
                         margin="normal"
                         required
                         fullWidth
                         autoComplete="mail-addres"
                         label="Mail Address"
+                        {...getFieldProps("MAIL_ADDRESS")}
+                        error={Boolean(touched.MAIL_ADDRESS && errors.MAIL_ADDRESS)}
+                        helperText={touched.MAIL_ADDRESS && errors.MAIL_ADDRESS}
                     />
+
                     <LoadingButton
                         type="submit"
                         fullWidth
@@ -60,6 +91,8 @@ const ForgotPassword = () => {
                     >
                         Kaydet
                     </LoadingButton>
+                    </Form>
+                    </FormikProvider>
                     <Grid alignItems="center">
                         <Grid item xs>
                             or {' '}
