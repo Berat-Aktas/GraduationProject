@@ -11,11 +11,11 @@ import AuthLayout from "../components/layout/AuthLayout";
 // Sayfaları import edin
 //pages
 import TransferMoney from "../pages/Bank Transactions/TransferMoney";
-import WithdrawMoney from '../pages/Bank Transactions/WithdrawMoney';
+import WithdrawMoney from './../pages/Bank Transactions/WithdrawMoney';
 import CheckBalance from "../pages/Bank Transactions/CheckBalance";
 import DepositMoney from "../pages/Bank Transactions/DepositMoney";
 
-import BankWise from '../pages/BankWise';
+import BankWise from './../pages/BankWise';
 import NotFound from '../pages/Helpers Pages/NotFound';
 
 import Login from "../pages/Auth/Login";
