@@ -13,9 +13,8 @@ const CheckBalance = () => {
   const [loading, setLoading] = useState(false);
 
 
-  return (<>
-    <h1>Bu sayfa geliştirme aşamasındadır.</h1>
-
+  return (
+  <>
     <Box>
       <Typography>
         <h3>Balance</h3>

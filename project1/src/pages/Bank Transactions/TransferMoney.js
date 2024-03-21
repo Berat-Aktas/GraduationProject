@@ -13,8 +13,6 @@ const TransferMoney = () => {
 
   return (
     <>
-      <h1>Bu sayfa geliştirme aşamasındadır.</h1>
-
       <Box>
         <Typography>
           <h3>Transfer Amount</h3>

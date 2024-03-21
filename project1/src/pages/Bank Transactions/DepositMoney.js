@@ -15,8 +15,6 @@ const DepositMoney = () => {
 
   return (
     <>
-      <h1>Bu sayfa geliştirme aşamasındadır.</h1>
-
       <Box>
         <Typography>
           <h3>Deposit Amount</h3>

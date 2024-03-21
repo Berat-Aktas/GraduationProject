@@ -12,7 +12,6 @@ const WithdrawMoney = () => {
 
   return (
     <>
-      <h1>Bu sayfa geliştirme aşamasındadır.</h1>
       <Box>
         <Typography>
           <h3>Withdraw Amount</h3>
