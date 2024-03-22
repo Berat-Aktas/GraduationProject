@@ -7,10 +7,12 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import Header from './Header';
 
 function Sidebar({ isOpen }) {
     return (
         <>
+        {/* <Header /> */}
             <Box sx={{ width: '100%', maxWidth: 230, bgcolor: 'background.paper' }}>
                 <nav>
                     <Typography

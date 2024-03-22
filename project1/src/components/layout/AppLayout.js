@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../navbar/Header';
-import { Box, Grid, Container } from '@mui/material';
+import { Box, Grid, Container, Card } from '@mui/material';
 import Sidebar from '../navbar/Sidebar';
 import Footer from '../navbar/Footer';
 import { Outlet } from 'react-router-dom';
