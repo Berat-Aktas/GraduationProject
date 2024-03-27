@@ -37,20 +37,9 @@ const Profile = () => {
               <TableCell>-</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Kullanıcı Tipi</TableCell>
+              <TableCell>Employee</TableCell>
               <TableCell>-</TableCell>
             </TableRow>
-
-            <TableRow>
-              <TableCell>Oluşturma Tarihi</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Oluşturan Kullanıcı</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-  
-
           </TableBody>
         </Table>
       </TableContainer>
