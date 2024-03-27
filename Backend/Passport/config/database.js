@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const pg = require('pg');
+// const pg = require('pg');
 
 
 require('dotenv').config();

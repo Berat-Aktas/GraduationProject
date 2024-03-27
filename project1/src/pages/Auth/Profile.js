@@ -29,10 +29,6 @@ const Profile = () => {
               <TableCell>Aktaş</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Kullanıcı Adı</TableCell>
-              <TableCell>berat.aktas</TableCell>
-            </TableRow>
-            <TableRow>
               <TableCell>E-Posta</TableCell>
               <TableCell>berataktas2020@gmail.com</TableCell>
             </TableRow>
@@ -53,38 +49,7 @@ const Profile = () => {
               <TableCell>Oluşturan Kullanıcı</TableCell>
               <TableCell>-</TableCell>
             </TableRow>
-            <TableRow>
-              <TableCell>Oluşturan Kullanıcı</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Düzenleme Tarihi</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Düzenleyen Kullanıcı</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Salt Okunur Kullanıcı</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Şifre Son Kullanma Tarihi</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Kullanıcı Durumu</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Rol Yetkisi</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Rol Adı</TableCell>
-              <TableCell>-</TableCell>
-            </TableRow>
+  
 
           </TableBody>
         </Table>
