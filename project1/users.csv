@@ -1,2 +1,3 @@
 userID,IdentityNumber,FirstName,LastName,BirthDate,PasswordHash,PasswordSalt,PhoneNumber,Email,Employee
 200201801,21887532422,Berat,Aktas,1999-11-22,12345,12345,05358448512,berataktas2020@gmail.com,True
+200201802,21887532420,Aras,Bulut,2017-07-28,54321,54321,05358448511,arasbulut@gmail.com,False
